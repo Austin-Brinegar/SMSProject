@@ -5,7 +5,8 @@ import java.io.IOException;
  */
 public class ExecuteCommand {
     public static void main(String[] args) throws IOException {
-        String path = "C:\\Users\\Austin\\Desktop\\quicklaunch apps\\Chrome.lnk";
+        String appName = "Chrome";
+        String path = "C:\\Users\\Austin\\Desktop\\quicklaunch apps\\"+appName +".lnk";
         File file = new File(path);
         if (!file.exists()) {
             throw new IllegalArgumentException("The file " + path + " does not exist");
